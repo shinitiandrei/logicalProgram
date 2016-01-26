@@ -44,18 +44,8 @@ public class Exam2 {
     }
 
     public int verifyAND(int first, int second) {
-
-        if (first == '0' && second == '0') {
-            return 0;
-        }
         if (first == '1' && second == '1') {
             return 1;
-        }
-        if (first == '0' && second == '1') {
-            return 0;
-        }
-        if (first == '1' && second == '0') {
-            return 0;
         }
         return 0;
     }
