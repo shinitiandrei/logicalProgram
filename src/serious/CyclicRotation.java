@@ -1,9 +1,18 @@
 package serious;// you can also use imports, for example:
 // import java.util.*;
 
+import java.util.Arrays;
+
 public class CyclicRotation {
 
-    public int[] solution(int[] A, int K) {
+    public static void main(String[] args) {
+        int[] array = {1,2,3,4,5,6,7,8,9};
+
+        System.out.println(Arrays.toString(solution(array, 3)));
+
+    }
+
+    public static int[] solution(int[] A, int K) {
         
         int length = A.length;
         int max_length = A.length - 1;
