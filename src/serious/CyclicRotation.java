@@ -9,12 +9,9 @@ class Solution {
         
         int length = A.length;
         int max_length = A.length - 1;
-        int next = 0;
         int index = 0;
         int secondIndex = 0;
         int finalIndex = 0;
-        int temp = 0;
-        int initial = 0;
         
         for (int i = 0; i < K; i++){
             finalIndex = A[max_length];
@@ -23,7 +20,7 @@ class Solution {
                     index = A[j];
                     A[j] = finalIndex;
                 }
-                if (j + 1 < length && j > 0){
+                if (j + 1 <= length && j > 0){
                     secondIndex = A[j];
                     A[j] = index;
                     index = secondIndex;      
