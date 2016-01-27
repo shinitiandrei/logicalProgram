@@ -20,26 +20,15 @@ class Solution {
             finalIndex = A[max_length];
             for (int j = 0; j < length; j++){
                 if (j == 0){
-                    index = A[j+1];
-                    A[j+1] = A[j];
+                    index = A[j];
+                    A[j] = finalIndex;
                 }
                 if (j + 1 < length && j > 0){
-                    
-                    secondIndex = A[j+1];
-                    A[j+1] = index;
-                    }
-
-                /*if (j == 0){
-                    index = A[j+1];
-                    initial = A[j];
-                    A[j+1] = initial;
+                    secondIndex = A[j];
+                    A[j] = index;
+                    index = secondIndex;      
                 }
-                if (j + 1 < max_length && j > 0){
-                    index = A[j+1];
-                    A[j] = index;                    
-                }*/
             }
-            A[0] = finalIndex;
         }
         return A;
     }
