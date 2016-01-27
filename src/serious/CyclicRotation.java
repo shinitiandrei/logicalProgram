@@ -11,7 +11,7 @@ public class CyclicRotation {
         System.out.println(Arrays.toString(solution(array, 3)));
 
     }
-
+g
     public static int[] solution(int[] A, int K) {
         
         int length = A.length;
