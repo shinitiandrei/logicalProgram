@@ -1,10 +1,8 @@
-// you can also use imports, for example:
+package serious;// you can also use imports, for example:
 // import java.util.*;
 
-// you can write to stdout for debugging purposes, e.g.
-// System.out.println("this is a debug message");
+public class CyclicRotation {
 
-class Solution {
     public int[] solution(int[] A, int K) {
         
         int length = A.length;
